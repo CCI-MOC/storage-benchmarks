@@ -1,0 +1,6 @@
+commonLabels:
+  app: mlperf-storage
+resources:
+  - job.yaml
+  - pvc.yaml
+namespace: storage-optimization-for-ai-applications-2e3462

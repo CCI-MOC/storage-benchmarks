@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: mlperf-storage-job
+spec:
+  template:
+    spec:
+      containers:
+        - name: mlperf-storage-job
+          image: ghcr.io/cci-moc/storage-benchmarks:main
+          imagePullPolicy: Always
+          volumeMounts:
+            - mountPath: /storage/unet3d_data
+              name: unet3d-data
+      restartPolicy: Never
+      volumes:
+        - name: unet3d-data
+          persistentVolumeClaim:
+            claimName: mlperf-storage-data
+  backoffLimit: 4
