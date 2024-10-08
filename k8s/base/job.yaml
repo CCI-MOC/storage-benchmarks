@@ -12,9 +12,21 @@ spec:
           volumeMounts:
             - mountPath: /storage/unet3d_data
               name: unet3d-data
+            - mountPath: /dev/shm
+              name: shm
+          resources:
+            requests:
+              memory: "16Gi"
+              cpu: "500m"
+            limits:
+              memory: "64Gi"
+              cpu: "4"
       restartPolicy: Never
       volumes:
         - name: unet3d-data
           persistentVolumeClaim:
             claimName: mlperf-storage-data
+        - name: shm
+          emptyDir:
+            medium: Memory
   backoffLimit: 4
