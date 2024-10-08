@@ -19,5 +19,5 @@ mkdir /tmp/results
     --param dataset.num_files_train=1200 \
     --param dataset.data_folder=unet3d_data
 
-cat /tmp/results/per_epoch_statsh.json
+cat /tmp/results/per_epoch_stats.json
 cat /tmp/results/summary.json
