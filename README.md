@@ -2,6 +2,8 @@
 These benchmarks are designed to measure the performance of storage
 on the MOC and NERC, specifically related to AI applications.
 
+Full details of experiments, environment and motivation for experiments can be found in a private Google Doc at the [link](https://docs.google.com/document/d/1p5qjCH3B4Etyz2t5vuUElhyk_xgjIlzzSKOj2MAzMMg)
+
 # Experiments
 - FIO
 - MLPerf storage
