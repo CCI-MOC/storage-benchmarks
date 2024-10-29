@@ -5,7 +5,7 @@ on the MOC and NERC, specifically related to AI applications.
 # Experiments
 - FIO
 - MLPerf storage
-- End to End
+- Real Inference Workload
 
 ## FIO
 The benchmarking tool selected for this evaluation is FIO.
@@ -58,4 +58,5 @@ The below results have not been run on the NERC and are provided purely for refe
 
 Other results that have been contributed from organizations can be found on the [MLPerf Storage website](https://mlcommons.org/benchmarks/storage/). 
 
-## Actual Inference Workload
+## Real Inference Workload
+To be derived from Sanjay’s work about the average model to use as an example. Granit (consult Perf group). OPT13B and LLAMA.
