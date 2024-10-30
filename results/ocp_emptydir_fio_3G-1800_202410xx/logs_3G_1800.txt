@@ -1,0 +1,17 @@
+Configuration:
+	List of benchmarks to run: fio  (BENCHMARKS)
+	Target path for tests: /local  (TARGET_PATH)
+	Number of test iterations to run: 1  (ITERATIONS)
+	Random startup delay (s): 0  (STARTUP_DELAY)
+	Random delay between iterations (s): 0  (RAND_THINK)
+	Delete contents of target dir on startup: 0  (DELETE_FIRST)
+	File size for fio benchmark: 3000  (FIO_CAPACITY_MB)
+	Runtime for individual fio tests (s): 1800  (FIO_RUNTIME)
+	Git repo to use for clone test: https://github.com/eclipse/che  (CLONE_REPO)
+Benchmark: fio
+	Max write bandwidth: 282 MiB/s
+	Max read bandwidth: 530 MiB/s
+	Write I/O latency: 0.034 ms  (50%=0.031, 90%=0.034, 95%=0.038, 99%=0.045)
+	Read I/O latency: 0.111 ms  (50%=0.113, 90%=0.129, 95%=0.134, 99%=0.151)
+	Max write throughput: 62305 IOPS
+	Max read throughput: 93520 IOPS
