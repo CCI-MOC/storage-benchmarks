@@ -23,7 +23,32 @@ The evaluation will include five key benchmarks:
 - **Max I/O Random Throughput**: 100% random writes, followed by 100% random reads, using 32 I/O threads. This test assesses the maximum write/read throughput we can expect, with a duration of approximately 30 minutes.
 - **Small WSS Streaming Reads**: 100% sequential reads over a small working-set with 32 I/O threads. This test is an attempt to separate the effects of the network between the client and storage from the overheads of the storage back end (i.e., disk). The workload generator is configured to bypass the client cache, ensuring the reads are sent to the storage system even though the WSS is small. Given the small WSS, the expectation is that it will fit in the storage system’s cache, leading to network overheads being the dominant contributor to performance.
 
-The results can be found in the [results/](results) folder.
+### Results
+#### (Network) Bandwidth
+Big (1MB) sequential I/O  requests, 32 concurrently, to  stress the network
+
+```
+            100MB       300GB       600GB
+Writes:     193 MiB/s   219 MiB/s   200 MiB/s
+Reads:      1990 MiB/s  690 MiB/s   1003 MiB/s
+```
+
+#### Latency
+Small (4KB) random I/O requests, no concurrency, to measure good latency
+
+```
+[in ms]         100MB       300GB       600GB
+Writes Avg.:    37.23       38.7        45.8
+Writes Median:  5.1         5.21        7.1
+Writes 99%:     371.1       337.6       405.5
+Reads Avg.:     0.8         17.62       10.6
+Reads Median:   0.39        13.43       10.58
+Reads 99%:      10.6        109.57      96.5
+```
+
+
+
+Full results can be found in the [results/](results) folder.
 
 ## MLPerf Storage
 
