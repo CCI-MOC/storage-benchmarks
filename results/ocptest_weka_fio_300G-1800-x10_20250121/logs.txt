@@ -1,0 +1,80 @@
+Configuration:
+        List of benchmarks to run: fio  (BENCHMARKS)
+        Target path for tests: /target  (TARGET_PATH)
+        Number of test iterations to run: 10  (ITERATIONS)
+        Random startup delay (s): 0  (STARTUP_DELAY)
+        Random delay between iterations (s): 0  (RAND_THINK)
+        Delete contents of target dir on startup: 0  (DELETE_FIRST)
+        File size for fio benchmark: 300000  (FIO_CAPACITY_MB)
+        Runtime for individual fio tests (s): 1800  (FIO_RUNTIME)
+        Git repo to use for clone test: https://github.com/eclipse/che  (CLONE_REPO)
+Benchmark: fio
+        Max write bandwidth: 1039 MiB/s
+        Max read bandwidth: 1443 MiB/s
+        Write I/O latency: 0.273 ms  (50%=0.245, 90%=0.346, 95%=0.362, 99%=0.522)
+        Read I/O latency: 0.419 ms  (50%=0.408, 90%=0.498, 95%=0.514, 99%=0.709)
+        Max write throughput: 32301 IOPS
+        Max read throughput: 32928 IOPS
+Benchmark: fio
+        Max write bandwidth: 1064 MiB/s
+        Max read bandwidth: 1361 MiB/s
+        Write I/O latency: 0.28 ms  (50%=0.249, 90%=0.35, 95%=0.367, 99%=0.537)
+        Read I/O latency: 0.312 ms  (50%=0.305, 90%=0.367, 95%=0.379, 99%=0.545)
+        Max write throughput: 31949 IOPS
+        Max read throughput: 33628 IOPS
+Benchmark: fio
+        Max write bandwidth: 1068 MiB/s
+        Max read bandwidth: 1348 MiB/s
+        Write I/O latency: 0.273 ms  (50%=0.247, 90%=0.346, 95%=0.362, 99%=0.528)
+        Read I/O latency: 0.393 ms  (50%=0.383, 90%=0.489, 95%=0.51, 99%=0.668)
+        Max write throughput: 37077 IOPS
+        Max read throughput: 35156 IOPS
+Benchmark: fio
+        Max write bandwidth: 1062 MiB/s
+        Max read bandwidth: 1364 MiB/s
+        Write I/O latency: 0.278 ms  (50%=0.249, 90%=0.35, 95%=0.367, 99%=0.545)
+        Read I/O latency: 0.316 ms  (50%=0.309, 90%=0.367, 95%=0.379, 99%=0.528)
+        Max write throughput: 32126 IOPS
+        Max read throughput: 32852 IOPS
+Benchmark: fio
+        Max write bandwidth: 1052 MiB/s
+        Max read bandwidth: 1445 MiB/s
+        Write I/O latency: 0.277 ms  (50%=0.249, 90%=0.346, 95%=0.367, 99%=0.518)
+        Read I/O latency: 0.319 ms  (50%=0.309, 90%=0.371, 95%=0.383, 99%=0.537)
+        Max write throughput: 36789 IOPS
+        Max read throughput: 38719 IOPS
+Benchmark: fio
+        Max write bandwidth: 1057 MiB/s
+        Max read bandwidth: 1375 MiB/s
+        Write I/O latency: 0.276 ms  (50%=0.247, 90%=0.346, 95%=0.367, 99%=0.528)
+        Read I/O latency: 0.317 ms  (50%=0.309, 90%=0.371, 95%=0.383, 99%=0.545)
+        Max write throughput: 32008 IOPS
+        Max read throughput: 32818 IOPS
+Benchmark: fio
+        Max write bandwidth: 1064 MiB/s
+        Max read bandwidth: 1446 MiB/s
+        Write I/O latency: 0.27 ms  (50%=0.243, 90%=0.342, 95%=0.362, 99%=0.518)
+        Read I/O latency: 0.319 ms  (50%=0.313, 90%=0.371, 95%=0.383, 99%=0.545)
+        Max write throughput: 36631 IOPS
+        Max read throughput: 38552 IOPS
+Benchmark: fio
+        Max write bandwidth: 1057 MiB/s
+        Max read bandwidth: 1454 MiB/s
+        Write I/O latency: 0.275 ms  (50%=0.247, 90%=0.346, 95%=0.367, 99%=0.528)
+        Read I/O latency: 0.318 ms  (50%=0.309, 90%=0.371, 95%=0.383, 99%=0.545)
+        Max write throughput: 32822 IOPS
+        Max read throughput: 33053 IOPS
+Benchmark: fio
+        Max write bandwidth: 1058 MiB/s
+        Max read bandwidth: 1351 MiB/s
+        Write I/O latency: 0.273 ms  (50%=0.245, 90%=0.346, 95%=0.362, 99%=0.514)
+        Read I/O latency: 0.416 ms  (50%=0.403, 90%=0.498, 95%=0.514, 99%=0.692)
+        Max write throughput: 32116 IOPS
+        Max read throughput: 33120 IOPS
+Benchmark: fio
+        Max write bandwidth: 1058 MiB/s
+        Max read bandwidth: 1434 MiB/s
+        Write I/O latency: 0.277 ms  (50%=0.249, 90%=0.346, 95%=0.367, 99%=0.518)
+        Read I/O latency: 0.417 ms  (50%=0.403, 90%=0.498, 95%=0.514, 99%=0.709)
+        Max write throughput: 36862 IOPS
+        Max read throughput: 38521 IOPS
