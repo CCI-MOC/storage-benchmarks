@@ -27,25 +27,23 @@ The evaluation will include five key benchmarks:
 #### (Network) Bandwidth
 Big (1MB) sequential I/O  requests, 32 concurrently, to  stress the network
 
-```
-            100MB       300GB       600GB
-Writes:     193 MiB/s   219 MiB/s   200 MiB/s
-Reads:      1990 MiB/s  690 MiB/s   1003 MiB/s
-```
+|         | *NESE* 100MB | *NESE* 300GB | *NESE* 600GB | *Weka* 300GB |
+|---------|--------------|--------------|--------------|-------------|
+| Writes: | 193 MiB/s    | 219 MiB/s    | 200 MiB/s    | 1060 MiB/s  |
+| Reads:  | 1990 MiB/s   | 690 MiB/s    | 1003 MiB/s   | 1404 MiB/s  |
+
 
 #### Latency
 Small (4KB) random I/O requests, no concurrency, to measure good latency
 
-```
-[in ms]         100MB       300GB       600GB
-Writes Avg.:    37.23       38.7        45.8
-Writes Median:  5.1         5.21        7.1
-Writes 99%:     371.1       337.6       405.5
-Reads Avg.:     0.8         17.62       10.6
-Reads Median:   0.39        13.43       10.58
-Reads 99%:      10.6        109.57      96.5
-```
-
+| in ms          | *NESE* 100MB | *NESE* 300GB | *NESE* 600GB | *Weka* 300GB |
+|----------------|-------------|--------------|--------------|--------------|
+| Writes Avg.:   | 37.23       | 38.7         | 45.8         | 0.275        |
+| Writes Median: | 5.1         | 5.21         | 7.1          | 0.247        |
+| Writes 99%:    | 371.1       | 337.6        | 405.5        | 0.525        |
+| Reads Avg.:    | 0.8         | 17.62        | 10.6         | 0.355        |
+| Reads Median:  | 0.39        | 13.43        | 10.58        | 0.311        |
+| Reads 99%:     | 10.6        | 109.57       | 96.5         | 0.545        |
 
 
 Full results can be found in the [results/](results) folder.
@@ -75,8 +73,7 @@ The results can be found in the [results/](results) folder.
 | A100          | 3500    | NESE Ceph PVC      | 10.81  | 165.35 |
 | H100          | 3500    | NESE Ceph PVC      | 5.58   | 168.05 |
 | A100          | 1000    | Local EmptyDir PVC | 24.51  | 729.10 |
-|               |         | Weka PVC           |        |        |
-|               |         | Weka PVC           |        |        |
+| A100          | 1000    | Weka PVC           | 58.08  | 871.68 |
 
 The below results have not been run on the NERC and are provided purely for reference.
 
@@ -86,5 +83,7 @@ The below results have not been run on the NERC and are provided purely for refe
 
 Other results that have been contributed from organizations can be found on the [MLPerf Storage website](https://mlcommons.org/benchmarks/storage/). 
 
-## Real Inference Workload
-To be derived from Sanjay’s work about the average model to use as an example. Granit (consult Perf group). OPT13B and LLAMA.
+## Training Workload
+To be performed:
+- Resnet with ImageNet dataset
+- BERT with [Wikipedia and bookcorpusopen](https://huggingface.co/datasets/sradc/chunked-shuffled-wikipedia20220301en-bookcorpusopen)
