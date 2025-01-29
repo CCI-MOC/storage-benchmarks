@@ -86,4 +86,4 @@ Other results that have been contributed from organizations can be found on the 
 ## Training Workload
 To be performed:
 - Resnet with ImageNet dataset
-- BERT with [Wikipedia and bookcorpusopen](https://huggingface.co/datasets/sradc/chunked-shuffled-wikipedia20220301en-bookcorpusopen)
+- BERT-large (350M) with Wikipedia [from MLPerf Trainig](https://github.com/mlcommons/training?tab=readme-ov-file#mlperf-training-v41-submission-deadline-oct-11-2024)
