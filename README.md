@@ -8,7 +8,7 @@ on the MOC and NERC, specifically related to AI applications.
 # Experiments
 - FIO
 - MLPerf storage
-- Real Inference Workload
+- Training Workload
 
 ## FIO
 The benchmarking tool selected for this evaluation is FIO.
